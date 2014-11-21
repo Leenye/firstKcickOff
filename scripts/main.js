@@ -1,4 +1,6 @@
+var count = 0 ;
 $(document).ready(function () {
+
     var feature = (function () {
         var initItems = function () {
             var items = loadAllItems();
@@ -27,5 +29,10 @@ $(document).ready(function () {
 
     feature.init();
     feature.printDate();
+    $("#count").text(count+"");
+    $("button").on("click",function(){
+      count++;
+      alert($("#count").text()+1);
+      $("#count").text(count+"");
+    });
 });
-
