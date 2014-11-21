@@ -27,12 +27,17 @@ $(document).ready(function () {
         };
     })();
 
+    // set a function here to realize the purchasedItem-table, just as method up
+
+
+
+
     feature.init();
     feature.printDate();
     $("#count").text(count+"");
     $("button").on("click",function(){
       count++;
-      alert($("#count").text()+1);
+    //  alert($("#count").text()+1);
       $("#count").text(count+"");
     });
 });
